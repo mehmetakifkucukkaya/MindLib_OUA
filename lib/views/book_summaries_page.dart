@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/book_model.dart';
 import '../widgets/book_card.dart';
+import 'book_details_page.dart';
 
 class BookSummariesPage extends StatelessWidget {
   const BookSummariesPage({super.key});
@@ -19,7 +20,18 @@ class BookSummariesPage extends StatelessWidget {
             mainAxisSpacing: 8.0,
           ),
           itemBuilder: (context, index) {
-            return BookCard(book: books[index]);
+            return GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        BookDetailsPage(book: books[index]),
+                  ),
+                );
+              },
+              child: BookCard(book: books[index]),
+            );
           },
         ),
       ),
