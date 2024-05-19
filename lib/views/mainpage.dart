@@ -32,6 +32,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        
         backgroundColor: Theme.of(context).colorScheme.secondary,
         title: const Center(
           child: Text(
