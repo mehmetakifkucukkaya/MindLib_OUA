@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "989485136105",
+    "project_id": "mindlib-9f0dc",
+    "storage_bucket": "mindlib-9f0dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989485136105:android:f9362d60cf91f1acd19878",
+        "android_client_info": {
+          "package_name": "com.example.mindlib"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa7JQFqzJezYkXVbZKnjW9lOTiBnTW4OM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,7 +1,21 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:mindlib/views/mainpage.dart';
+import 'package:mindlib/firebase_options.dart';
+import 'package:mindlib/services/login_or_register.dart';
 
-void main() => runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  try {
+    await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform);
+  } catch (e) {
+    print('Firebase.initializeApp() Hatası: $e');
+  }
+
+  runApp(
+    const MyApp(),
+  );
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,8 +33,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        '/': (context) => const MainPage(),
-        // '/login' : (context) => LoginPage(),
+        '/': (context) => const LoginOrRegister(),
+        //'/login': (context) => LoginOrRegister(),
         // '/signUp' : (context) => SignUpPage(),
       },
     );
