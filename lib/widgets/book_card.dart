@@ -15,9 +15,12 @@ class BookCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Expanded(
-            child: Image.network(
-              book.imageUrl,
-              fit: BoxFit.cover,
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Image.network(
+                book.imageUrl,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           Padding(
