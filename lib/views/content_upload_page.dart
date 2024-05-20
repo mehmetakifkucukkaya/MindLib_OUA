@@ -1,5 +1,11 @@
+// ignore_for_file: use_build_context_synchronously
+
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+
+import 'summary_page.dart';
 
 class ContentUploadPage extends StatelessWidget {
   const ContentUploadPage({super.key});
@@ -37,6 +43,15 @@ class ContentUploadPage extends StatelessWidget {
                         onPressed: () async {
                           XFile? xfile = await ImagePicker()
                               .pickImage(source: ImageSource.gallery);
+
+                          if (xfile != null) {
+                            File image = File(xfile.path);
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        SummaryPage(image)));
+                          }
                         },
                         child: Container(
                           margin: const EdgeInsets.symmetric(
