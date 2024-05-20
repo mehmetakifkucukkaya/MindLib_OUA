@@ -25,6 +25,14 @@ class _ContentUploadPageState extends State<ContentUploadPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                Text(
+                  "Özetini çıkartmak istediğiniz metin dosyasını seçin",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.grey[700],
+                  ),
+                  textAlign: TextAlign.center,
+                ),
                 Container(
                   width: 300,
                   height: 300,
