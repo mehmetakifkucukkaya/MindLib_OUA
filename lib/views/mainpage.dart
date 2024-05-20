@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mindlib/views/content_upload_page.dart';
 
 import 'book_summaries_page.dart';
 
@@ -10,13 +11,11 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
 
   //* BottomNavigationBar'da gösteriecek sayfaların listesi
   static const List<Widget> _pages = <Widget>[
-    // ContentUploadPage(),
-    BookSummariesPage(),
-    BookSummariesPage(),
+    ContentUploadPage(),
     BookSummariesPage(),
     BookSummariesPage(),
     // TranslationPage(),
@@ -32,7 +31,6 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
         backgroundColor: Theme.of(context).colorScheme.secondary,
         title: const Center(
           child: Text(

@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:mindlib/firebase_options.dart';
-import 'package:mindlib/services/login_or_register.dart';
+import 'package:mindlib/views/mainpage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        '/': (context) => const LoginOrRegister(),
+        '/': (context) => const MainPage(),
         //'/login': (context) => LoginOrRegister(),
         // '/signUp' : (context) => SignUpPage(),
       },
