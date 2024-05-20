@@ -40,6 +40,7 @@ dependencies:
   cloud_firestore: ^4.15.8
   provider: ^6.1.2
   image_picker: ^1.1.1
+  google_mlkit_text_recognition: ^0.13.0
 
 dev_dependencies:
   flutter_test:

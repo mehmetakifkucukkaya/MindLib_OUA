@@ -7,9 +7,14 @@ import 'package:image_picker/image_picker.dart';
 
 import 'summary_page.dart';
 
-class ContentUploadPage extends StatelessWidget {
+class ContentUploadPage extends StatefulWidget {
   const ContentUploadPage({super.key});
 
+  @override
+  State<ContentUploadPage> createState() => _ContentUploadPageState();
+}
+
+class _ContentUploadPageState extends State<ContentUploadPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
