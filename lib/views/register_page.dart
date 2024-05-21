@@ -6,8 +6,7 @@ import 'package:mindlib/widgets/my_textfield.dart';
 class RegisterPage extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _pwController = TextEditingController();
-  final TextEditingController _confirmPwController =
-      TextEditingController();
+  final TextEditingController _confirmPwController = TextEditingController();
 
   // tap to go to register page
   final void Function()? onTap;
@@ -143,19 +142,19 @@ class RegisterPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  Text(
+                    "Zaten bir hesabın var mı? ",
+                    style:
+                        TextStyle(color: Theme.of(context).colorScheme.primary),
+                  ),
                   GestureDetector(
                     onTap: onTap,
                     child: Text(
-                      "Zaten bir hesabın var mı? ",
+                      "Giriş Yap",
                       style: TextStyle(
-                          color: Theme.of(context).colorScheme.primary),
-                    ),
-                  ),
-                  Text(
-                    "Giriş Yap",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Theme.of(context).colorScheme.primary,
+                        fontWeight: FontWeight.bold,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
                     ),
                   ),
                 ],
