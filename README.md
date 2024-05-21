@@ -2,7 +2,7 @@
 ## **Projenin Amacı**
 
 
-**MindLib uygulaması, kullanıcılarına dijital kütüphane hizmeti sunmaktadır. Yapay zeka desteği ile kitap ve makalelerin analizini yaparak, bu materyallerin özetini kullanıcılarına sağlamaktadır. Kullanıcılar, kendi profillerini oluşturarak istedikleri kitap ve makalelerin özetlerini kütüphane sisteminde saklayabilmektedir. Ayrıca, istedikleri materyalleri favorilerine ekleyip depolayabilirler. Yapay zeka, bu süreçte kitap ve makalelerin bir kısmını tarayarak hangi kitaba veya makaleye ait olduğunu tespit eder ve bu materyallerin özetini çıkarır.**
+**MindLib uygulaması, kullanıcılarına dijital kütüphane hizmeti sunmaktadır. Yapay zeka desteği ile kitap ve makalelerin analizini yaparak, bu materyallerin özetini kullanıcılarına sağlamaktadır. Kullanıcılar, kendi profillerini oluşturarak istedikleri kitap ve makalelerin özetlerini kütüphane sisteminde saklayabilmektedir.Özetleme yapılmak için yapay zeka kullanılır. Bu sayede kullanıcılar hem hazır kitap özetlerine hem de istedikleri metaryellerin özetlerine kolayca ulaşabilir.Yapay zekanın gücünden faydanalarak, büyük metinleri hızlı ve etkili biçimde özetleyip anlamak, kullanıcılara zaman kazandırır ve bilgiyi daha erişilebilir hale getirir.**
 
 
 *Birinci Görselimizde uygulamayı indirdiğinizde karşınıza çıkacak olan uygulamamızın logosunu içeren görseldir.Uygulamaya Giriş sayfasıdır.Kullanıcılar eğer uygulamaya kayıtlı iseler mail ve şifrelerini girerek ana sayfaya yönlendirilirler.*
@@ -17,13 +17,13 @@
 ![SingUpPage](https://github.com/mehmetakifkucukkaya/MindLib_OUA/blob/main/ProjectImages/2_SignUpPage.png)
 
 
-*Ana sayfada daha önce özetini çıkardıkları ve favorilere ekledikleri kitap ve makaleleri görebilir. Aynı zamanda sayfanın sonunda uygulamanın kullanacakları özelliklere geçiş için butonları görürler.*
+*Ana sayfada hazır kitap ve makalelerin özetlerini görebilir. Aynı zamanda sayfanın sonunda uygulamanın kullanacakları özelliklere geçiş için butonları görürler.*
 
 
 ![MainPage](https://github.com/mehmetakifkucukkaya/MindLib_OUA/blob/main/ProjectImages/3_MainPage.png)
 
 
-*Favorilere eklenen kitapların üstüne tıklayarak kitapların detayına bakabilirler.*
+*Kitapların üstüne tıklayarak kitapların detayına bakabilirler.*
 
 
 ![BookDetailPage](https://github.com/mehmetakifkucukkaya/MindLib_OUA/blob/main/ProjectImages/BookDetailPage.jpg)
