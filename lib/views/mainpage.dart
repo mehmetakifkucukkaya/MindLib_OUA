@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mindlib/views/content_upload_page.dart';
 
 import 'book_summaries_page.dart';
+import 'profile_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -17,8 +18,7 @@ class _MainPageState extends State<MainPage> {
   static const List<Widget> _pages = <Widget>[
     ContentUploadPage(),
     BookSummariesPage(),
-    BookSummariesPage(),
-    // TranslationPage(),
+    ProfilePage(),
   ];
 
   void _onItemTapped(int index) {
@@ -58,8 +58,8 @@ class _MainPageState extends State<MainPage> {
             label: 'Kitap Özetleri',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.format_size_outlined),
-            label: 'Çeviri',
+            icon: Icon(Icons.person_sharp),
+            label: 'Profil',
           ),
         ],
         currentIndex: _selectedIndex,
