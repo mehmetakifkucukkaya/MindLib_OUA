@@ -66,6 +66,7 @@ class RegisterPage extends StatelessWidget {
     final ekranGenisligi = ekranBilgisi.size.width;
 
     return Scaffold(
+      appBar: AppBar(),
       backgroundColor: Theme.of(context).colorScheme.background,
       body: Center(
         child: SingleChildScrollView(
@@ -90,7 +91,7 @@ class RegisterPage extends StatelessWidget {
               ),
               //welcome back message
               Text(
-                "Let's create an account for you",
+                "Yeni Hesap Oluştur",
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.primary,
                   fontSize: 16,
@@ -110,7 +111,7 @@ class RegisterPage extends StatelessWidget {
               ),
               //pw textfield
               MyTextField(
-                hintText: "Password",
+                hintText: "Şifre",
                 obscureText: true,
                 controller: _pwController,
               ),
@@ -123,19 +124,19 @@ class RegisterPage extends StatelessWidget {
               ),
               //confirm pw textfield
               MyTextField(
-                hintText: "Confirm Password",
+                hintText: "Şifreyi Onayla",
                 obscureText: true,
                 controller: _confirmPwController,
               ),
               const SizedBox(
-                height: 25,
+                height: 20,
               ),
 
               //login button
-              MyButton(text: "Register", onTap: () => register(context)),
+              MyButton(text: "Kaydol", onTap: () => register(context)),
 
               const SizedBox(
-                height: 25,
+                height: 20,
               ),
 
               //register now
@@ -144,15 +145,18 @@ class RegisterPage extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: onTap,
-                    child: const Text(
-                      "Already have an account",
-                      style: TextStyle(color: Colors.white),
+                    child: Text(
+                      "Zaten bir hesabın var mı? ",
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.primary),
                     ),
                   ),
-                  const Text(
-                    "Login now",
+                  Text(
+                    "Giriş Yap",
                     style: TextStyle(
-                        fontWeight: FontWeight.bold, color: Colors.white),
+                      fontWeight: FontWeight.bold,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
                   ),
                 ],
               ),

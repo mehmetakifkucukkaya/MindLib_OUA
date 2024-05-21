@@ -104,7 +104,7 @@ class LoginPage extends StatelessWidget {
                     horizontal: 20), // Adjust padding as needed
                 color: Colors.white, // Set background color to white
                 child: MyTextField(
-                  hintText: "Password",
+                  hintText: "Şifre",
                   obscureText: true,
                   controller: _pwController,
                 ),
@@ -115,7 +115,7 @@ class LoginPage extends StatelessWidget {
 
               // Login button
               MyButton(
-                text: "Login",
+                text: "Giriş Yap",
                 onTap: () => login(context),
               ),
               const SizedBox(
@@ -127,7 +127,7 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Not a member? ",
+                    "Üye Değil misin? ",
                     style: TextStyle(
                         fontSize: 16,
                         color: Theme.of(context).colorScheme.primary),
@@ -135,7 +135,7 @@ class LoginPage extends StatelessWidget {
                   GestureDetector(
                     onTap: onTap,
                     child: Text(
-                      "Register now",
+                      "Hemen Kayıt Ol",
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,

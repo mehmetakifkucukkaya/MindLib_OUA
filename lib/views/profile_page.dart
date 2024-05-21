@@ -70,8 +70,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           // Eğer seçilmiş bir fotoğraf yoksa, varsayılan resmi kullanıyoruz
                           backgroundImage: profileImage != null
                               ? FileImage(profileImage!)
-                              : const AssetImage(
-                                      'assets/profile_picture.png')
+                              : const AssetImage('assets/user.png')
                                   as ImageProvider,
                         ),
                         Positioned(

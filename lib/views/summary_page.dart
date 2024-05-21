@@ -95,36 +95,11 @@ class _SummaryPageState extends State<SummaryPage> {
       setState(() {
         summary = summaryText;
       });
-      _showSummaryDialog(summaryText); // Özet bilgisini göster
     } else {
       setState(() {
         summary = '';
       });
     }
-  }
-
-  // Özet bilgisini göstermek için bir dialog kutusu gösteren fonksiyon
-  void _showSummaryDialog(String summaryText) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Center(child: Text('Özet')),
-          content: SelectableText(
-            summaryText,
-            style: const TextStyle(fontSize: 15),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop(); // Dialog kutusunu kapat
-              },
-              child: const Text('Kapat'),
-            ),
-          ],
-        );
-      },
-    );
   }
 
   @override
@@ -140,6 +115,33 @@ class _SummaryPageState extends State<SummaryPage> {
               child: Column(
                 children: [
                   Image.file(widget.imageFile),
+                  const SizedBox(height: 20),
+                  const Text(
+                    "Özet",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
+                        decoration: TextDecoration.underline),
+                  ),
+                  if (summary.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Container(
+                        color: Colors.grey[400],
+                        child: Column(
+                          children: [
+                            Text(
+                              summary,
+                              style: const TextStyle(
+                                fontSize: 16,
+                                color: Colors.black,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),
